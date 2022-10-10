@@ -16,7 +16,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String nombre = JOptionPane.showInputDialog("Ingrese el nombre: ");
+        JOptionPane.showMessageDialog(null, "Datos del profesor");
+        String nombre = JOptionPane.showInputDialog("Ingrese el nombre del profesor: ");
         String apellidos = JOptionPane.showInputDialog("Ingrese los"
                 + " apelllidos: ");
         String carrera = JOptionPane.showInputDialog("Ingrese la carrera: ");
@@ -24,7 +25,7 @@ public class Main {
         String grupo = JOptionPane.showInputDialog("Ingrese el grupo: ");
 
         datos mydatos = new datos(nombre, apellidos, carrera, sede, grupo);
-
+        
         JOptionPane.showMessageDialog(null, "El nombre "
                 + "del profesor es " + mydatos.getNombre());
         JOptionPane.showMessageDialog(null, "Los apellidos del "
@@ -40,6 +41,19 @@ public class Main {
         mydatos.Realizar_Pruebas();
         mydatos.Revisar();
         mydatos.Reportar();
+        
+        JOptionPane.showMessageDialog(null, "Datos del computador");
+        String marca = JOptionPane.showInputDialog("Ingrese la marca del computador: ");
+        String modelo = JOptionPane.showInputDialog("Ingrese el modelo: ");
+        String serie = JOptionPane.showInputDialog("Ingrese la serie: ");
+        String tipo = JOptionPane.showInputDialog("Ingrese el tipo: ");
+        
+        Computador Ucomputador = new Computador(marca, modelo, serie, tipo);
+        
+        System.out.println("La marca del computador es:"+ Ucomputador.getMarca());
+        System.out.println("El modelo del computador es:"+ Ucomputador.getModelo());
+        System.out.println("La serie del computador es:"+ Ucomputador.getSerie());
+        System.out.println("El tipo del computador es:"+ Ucomputador.getTipo());
     }
 
 
