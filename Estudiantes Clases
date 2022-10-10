@@ -1,0 +1,74 @@
+package trabajo.pkg5;
+
+/**
+ *
+ * @author daval
+ */
+public class Estudiantes {
+
+    private String nombre;
+    private String apellidos;
+    private int cedula;
+    private String carrera;
+    private String horarios;
+    private String sede;
+
+    public Estudiantes(String nombre, String apellidos, short cedula, String carrera, String horarios, String sede) {
+
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.cedula = cedula;
+        this.carrera = carrera;
+        this.horarios = horarios;
+        this.sede = sede;
+
+    }
+
+    public String getnombre(){
+        return nombre;  
+    }
+    public void setnombre(String horarios) {
+        this.nombre = nombre;
+        
+    }   
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public short getCedula() {
+        return (short) cedula;
+    }
+
+    public void setCedula(short cedula) {
+        this.cedula = cedula;
+    }
+
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
+
+    public String getHorarios() {
+        return horarios;
+    }
+
+    public void setHorarios(String horarios) {
+        this.horarios = horarios;
+    }
+
+    public String getSede() {
+        return sede;
+    }
+
+    public void setSede(String sede) {
+        this.sede = sede;
+    }
+
+}
