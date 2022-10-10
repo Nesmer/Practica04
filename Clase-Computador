@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package practica4;
+
+/**
+ *
+ * @author eliec
+ */
+public class Computador {
+    private String marca;
+    private String modelo;
+    private String serie;
+    private String tipo;
+    
+    public Computador(String marca, String modelo, String serie, String tipo){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.serie = serie;
+        this.tipo = tipo;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public String getSerie() {
+        return serie;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+    
+    
+   
+}
