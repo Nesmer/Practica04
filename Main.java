@@ -37,11 +37,6 @@ public class Main {
         JOptionPane.showMessageDialog(null, "El grupo del profesor"
                 + " es " + mydatos.getGrupo());
         
-        mydatos.enseñar();
-        mydatos.Realizar_Pruebas();
-        mydatos.Revisar();
-        mydatos.Reportar();
-        
         JOptionPane.showMessageDialog(null, "Datos del computador");
         String marca = JOptionPane.showInputDialog("Ingrese la marca del computador: ");
         String modelo = JOptionPane.showInputDialog("Ingrese el modelo: ");
@@ -54,6 +49,30 @@ public class Main {
         System.out.println("El modelo del computador es:"+ Ucomputador.getModelo());
         System.out.println("La serie del computador es:"+ Ucomputador.getSerie());
         System.out.println("El tipo del computador es:"+ Ucomputador.getTipo());
+        
+        JOptionPane.showMessageDialog(null, "Datos del computador");
+        String nombre =JOptionPane.showInputDialog("Digite su primer"
+                + "nombre");
+        String apellidos = JOptionPane.showInputDialog("Digite sus "
+                + "apellidos");
+        int cedula = Integer.parseInt(JOptionPane.showInputDialog("Digite el "
+                + "numero de cedula"));
+        String carrera = JOptionPane.showInputDialog("Digite la carrera que le "
+                + "gustaria estudiar");
+        String horarios = JOptionPane.showInputDialog("Digite El horario que le"
+                + "gustaria obtener");
+        String sede = JOptionPane.showInputDialog("Digite la sede a la que le "
+                + "gustaria asistir");
+        
+        Estudiantes nEstudiante =  new Estudiantes(nombre,apellidos,(short)cedula,
+                carrera, horarios, sede);
+        
+        JOptionPane.showMessageDialog(null,"Su nombre es :" +nombre);
+        JOptionPane.showMessageDialog(null, "Sus apellidos son :"+apellidos);
+        JOptionPane.showMessageDialog(null,"La cedula es :"+cedula);
+        JOptionPane.showMessageDialog(null, "La carrrera seria :" +carrera);
+        JOptionPane.showMessageDialog(null, "El horario a escoger seria ;"+horarios);
+        JOptionPane.showMessageDialog(null, "La sede a escoger seria :"+sede);
     }
 
 
